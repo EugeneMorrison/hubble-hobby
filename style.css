@@ -1,0 +1,118 @@
+/* General layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #101010;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.inner-header {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #101010;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a li {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: gray;
+}
+
+.navigation a:hover li {
+    color: #fff;
+}
+
+/* Page content */
+.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Reusable containers */
+.hobby-wrapper,
+.about-wrapper,
+.text-wrap-layout {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* Flex layout */
+.hobby-wrapper,
+.about-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Image styles */
+.hobby-img,
+.about-img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* For wrapped text image */
+.wrapped-image {
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text block */
+.hobby-description,
+.about-text {
+    max-width: 700px;
+}
+
+.hobby-description h2,
+.about-text h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.hobby-description p,
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
